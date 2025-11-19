@@ -1,0 +1,33 @@
+# Exclude large/irrelevant files from Vercel upload to stay under 250MB unzipped limit
+
+# Python virtual envs and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Git & local tooling
+.git/
+.gitignore
+
+# Databases and local data
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Huge model/assets directories (do not upload to serverless)
+app/whisper-large_v3/
+
+# Node artifacts and caches (frontend is built separately by Vercel)
+J.A.R.V.I.S/node_modules/
+J.A.R.V.I.S/.vite/
+J.A.R.V.I.S/dist/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+
+# Docker local state
+qdrant_storage/

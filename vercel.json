@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "J.A.R.V.I.S/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "installCommand": "cd J.A.R.V.I.S && npm ci",
+  "buildCommand": "cd J.A.R.V.I.S && npm run build",
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
