@@ -16,9 +16,16 @@ __pycache__/
 *.sqlite
 *.sqlite3
 *.log
+accounts.db
+screening.db
 
 # Huge model/assets directories (do not upload to serverless)
 app/whisper-large_v3/
+
+# Entire backend (prevent Python detection & function packaging)
+app/**
+requirements.txt
+docker-compose.yml
 
 # Node artifacts and caches (frontend is built separately by Vercel)
 J.A.R.V.I.S/node_modules/
