@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+.env.*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# FFmpeg chunks and outputs
+chunks/
+output/
+*.wav
+*.mkv
+*.mp3
+*.flac
+
+# Large model weights and caches
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.tflite
+*.gguf
+
+# Hugging Face and caches
+.cache/
+.huggingface/
+transformers_cache/

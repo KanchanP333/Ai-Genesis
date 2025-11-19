@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+qdrant-client==1.9.2
+google-generativeai
+python-jose[cryptography]
+passlib[bcrypt]
+pydantic
+requests
+python-dotenv
+numpy
+sqlmodel
+python-docx
